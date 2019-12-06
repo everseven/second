@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .head {
+            height: 80px;
+        } 
+        .head-c {
+            /* background-color: green; */
+            margin: 0 auto;
+            width: 1080px;
+            height: 100%;
+        }
+    .logo {
+        float: left;
+        width: 186px;
+        height: 100%;
+        background: url(img/logo.png) no-repeat center;
+    }
+    .head-c .nav {
+        width: 618px;
+        height: 100%;
+        float: right;
+    }
+    .head-c .nav-item {
+        position: relative;
+        float: left;
+        line-height: 80px;
+        margin-right: 62px;
+        /* background-color: pink; */
+        font-size: 17px;
+    }
+    .head-c .nav-item a {
+        color: #888787;
+    }
+    .head-c .nav-item:hover a {
+        font-weight: bold;
+        color: #0a0a0a;
+    }
+    .head-c .nav-item .line {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 23px;
+        width: 22px;
+        height: 2px;
+        background-color: #888787;
+    }
+    .head-c .nav-item:hover .line {
+        display: block;
+    }
+    .head-c .nav-item.mg0 .line {
+        display: block;
+    }
+    .head-c .nav-item.mg0 a{
+        color: black;
+        font-weight: bold;
+    }
+    .banner1 {
+        width: 100%;
+        height: 720px;
+        background: url(img/banner1.png) no-repeat center;
+    }
+    .banner-c {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        /* background-color: pink; */
+    }
+    .banner1 .banner-c .left {
+        position:absolute;
+        left: -50px;
+       width: 50px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        bottom: 327px;
+        font-size: 30px;
+        color: #fff;
+        background-color: #c9cace; 
+    }
+    .banner1 .banner-c .right {
+        position:absolute;
+        right: -50px;
+        width: 50px;
+        height: 80px;
+        line-height: 80px;
+        bottom: 327px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        background-color: #c9cace;
+    }
+    .banner1 .dots {
+        position: relative;
+        left: 50%;
+        bottom: 20px;
+    }
+    .banner1 .dots .dot-item {
+        /* position: absolute; */
+        float: left;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color:grey;
+        margin-right: 10px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+    }
+    .banner1 .dots .dot-item:hover {
+        border-color:#333;
+    }
+    .banner2 {
+        width: 1200px;
+        height: 730px;
+        margin: 100px auto;
+        /* background-color: pink; */
+    }
+    .p1 {
+        font-size: 26px;
+        color: #444444;
+        text-align: center;
+    }
+    .p2 {
+        font-size: 16px;
+        color: grey;
+        text-align: center;
+    }
+    .banner2 .title {
+        width: 600px;
+        height: 60px;
+        line-height: 60px;
+        margin: 100px auto;
+    }
+    .banner2 .nav {
+        position: relative;
+       float: left;
+       text-align: center;
+       margin-right: 80px;
+    }
+    .banner2 a {
+        color: #656565;
+    }
+    .banner2 .nav .dots {
+        display: none;
+        position: absolute;
+        width: 5px;
+        height: 5px; 
+        left: 50%;
+        bottom: 10px;
+        border-radius: 50%;
+        background-color: #b9ab77;
+    }
+    .banner2 .nav:hover .dots{
+        display: block;
+    }
+    .banner2 .nav:hover a {
+        color: #b9ab77;
+    }
+
+    .banner2 .nav.active .dots{
+        display: block;
+    }
+    .banner2 .nav.active a {
+        color: #b9ab77;
+    }
+    .banner2 .main {
+      width: 100%;
+      height: 420px;
+    }
+    .banner2 .pic {
+        float: left;
+        width: 270px;
+        height: 360px;
+       margin-right: 40px;
+    }
+    .banner2 .pic.mg0 {
+        margin-right: 0px;
+    }
+    .banner2 .pic .a1 {
+        display: block;
+        height: 100%;
+        background: url(img/dress1.png) no-repeat center;
+    }
+    .banner2 .pic .b2 {
+        display: block;
+        height: 100%;
+        background: url(img/dress2.png) no-repeat center;
+    }
+    .banner2 .pic .c3 {
+        display: block;
+        height: 100%;
+        background: url(img/dress3.png) no-repeat center;
+    }
+    .banner2 .pic .d4 {
+        display: block;
+        height: 100%;
+        background: url(img/dress4.png) no-repeat center;
+    }
+    .banner2 .more { 
+        display: block;
+        font-size: 12px; 
+        color: gray;
+        text-align: center;
+        height: 105px;
+        line-height: 40px;
+        /* background-color: pink; */
+     }
+     .banner3 .more a {
+         display: block;
+        font-size: 12px;
+        text-align: center;
+        height: 105px;
+        line-height: 40px;
+         color: gray;
+     }
+     .banner3 {
+         margin-top: 100px;
+     }
+     .banner3 .b3-main {
+         width: 1200px;
+         height: 240px;
+         margin: 100px auto;
+     }
+     .banner3 .b3-pic {
+         width: 270px;
+         height: 180px;
+         float: left;
+         margin-right: 40px;
+     }
+     .banner3 .b3-pic.mg0 {
+         margin-right: 0px;
+     }
+     .banner3 .a11 {
+       display: block;
+       width: 100%;
+       height: 100%;
+        background: url(img/ring1.png) no-repeat center;
+    }
+    .banner3  .b22 {
+        display: block;
+       width: 100%;
+       height: 100%;
+        background: url(img/ring2.png) no-repeat center;
+    }
+    .banner3  .c33 {
+        display: block;
+       width: 100%;
+       height: 100%;
+        background: url(img/ring3.png) no-repeat center;
+    }
+    .banner3 .d44 {
+        display: block;
+        width: 100%;
+       height: 100%;
+        background: url(img/ring4.png) no-repeat center;
+    }
+    .news {
+        width: 100%;
+       
+        background: url(img/newsbg.png) no-repeat center;
+    }
+    .news .news-c {
+        width: 1200px;
+        height: 205px;
+        margin: 170px auto;
+    }
+    .news .news-c .new {
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 333px;
+        background-color:#fff;
+    }
+    .news .news-c .new.photo{ 
+        background: url(img/schedule.png) no-repeat center;
+    }
+    .news .news-c .new .box {
+        position: absolute;
+        /* width: 80px;
+        height: 25px; */
+        top: 40px;
+        left: 39px;
+        right: 39px;
+    }
+    .news .news-c .new .box .time {
+        font-size: 30px;
+        color: #8b8b8b;
+    }
+    .new .box .year {
+        font-size: 14px;
+        color: #8b8b8b;
+    }
+    .new .box .title {
+        margin-top: 40px;
+        font-size: 16px;
+        font-family: 黑体;
+    }
+    .new .box .content {
+        font-size: 13px;
+        margin-top: 10px;
+        font-family: 黑体;
+        color: #8b8b8b;
+    }
+    .new .box .a {
+        margin-top: 55px;
+        font-size: 14px;
+    }
+    .new .box a {
+        color: #c7c7c7;
+    }
+    .news .more a {
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+         color: black;
+    }
+    ul {
+        list-style: none;
+    }
+    .designers {
+        overflow: hidden;
+        position: relative;
+        margin-top: 100px;
+        width: 100%;
+        height: 664px;
+        background: url(img/middle.png) no-repeat center;
+    }
+    .designers .left {
+        position: absolute;
+        height: 100%;
+        width: 392px;
+        left: 0px;
+        background: url(img/left.png) no-repeat center;
+    }
+    .designers .right {
+        position: absolute;
+        height: 100%;
+        width: 216px;
+       right: 0px;
+        background: url(img/right.png) no-repeat center;
+    }
+    .designer-c {
+        position: absolute;
+        left: 50% ;
+        top: 60px;
+        transform: translate(-40%, 0);
+        z-index: 2;
+        width: 980px;
+        height: 100%;
+        margin: 0 auto;
+        /* background-color: pink; */
+    }
+    .designers .title {
+        text-align: center;
+        color: #fff;
+    }
+    .designers .title1 {
+        font-size: 26px;
+        margin: 5px auto;
+    }
+    .designers .title2 {
+        font-size: 14px;
+    }
+    .designer-c .designer {
+        float: left;
+        width: 230px;
+        height: 400px;
+        margin-top: 60px;
+        margin-right: 130px;
+        /* background-color:blue; */
+    }
+    .designers .designer.mg0 {
+        margin-right: 0px;
+    }
+    .designers .designer .d1 {
+        margin: 0 auto;
+        width: 180px;height: 180px;
+        background: url(img/designer1.png) no-repeat center;
+    }
+    .designers .designer .d1.b {
+        margin: 0 auto;
+        width: 180px;height: 180px;
+        background: url(img/designer2.png) no-repeat center;
+    }
+    .designers .designer .d1.c {
+        margin: 0 auto;
+        width: 180px;height: 180px;
+        background: url(img/designer3.png) no-repeat center;
+    }
+    .designers .designer .d1name {
+        font-size: 24px;
+        color: #f7f5f5;
+        margin-top: 23px;
+        text-align: center;
+    }
+    .designers .designer .d1position {
+        margin-top: 9px;
+        font-size: 12px;
+        text-align: center;
+        color: #949494;
+    }
+    .designers .designer .d1content {
+        margin-top: 18px;
+        margin-left: 1px;
+        font-size: 12px;
+        text-align: center;
+        color: #949494;
+    } 
+    .designers .designer .more {
+        margin-top: 30px;
+        font-size: 12px;
+        text-align: center;
+        color: #949494;
+    }
+    .designers .designer .line {
+        width: 150px;
+        background-color: grey;
+        height: 1px;
+        margin: 10px auto;
+    }
+    .designers .designer a{
+        color: grey;
+    }
+    .foot {
+        overflow: hidden;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+    }
+    .foot-c {
+        position: relative;
+      
+        width: 1200px;height: 100%;margin:  auto;
+        font-size: 12px;
+    }
+    .foot-c .foot-l {
+        top: 36px;
+        position: absolute;
+        left: 0;
+    }
+    .foot-c .foot-l p {
+        margin-top:4px ;
+    }
+    .foot-c .foot-r {
+        position: absolute;
+        top: 45px;
+        right: 0;
+    }
+    .foot-c .foot-r .c1 {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 4px;
+       left: -14px;
+        background: url(img/c.png) no-repeat center;
+    }
+    .foot-c .foot-r a{
+        /* display: block; */
+        color: #000;
+        margin-left: 58px;
+    }
+    .foot-c .foot-r a:hover{
+        color: red;
+    }  
+   </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head-c">
+            <a href="#" class="logo"></a>
+            <ul class="nav">
+                <li class="nav-item mg0"> <a href="shouye.html">首页</a>
+                <span class="line"></span>
+                </li>
+                <li class="nav-item"> <a href="dress.html">婚纱礼服</a>
+                <span class="line"></span></li>
+                <li class="nav-item"> <a href="jew.html">珠宝配饰</a>
+                <span class="line"></span></li>
+                <li class="nav-item"> <a href="lastest activity.html">最新活动</a>
+                <span class="line"></span></li>
+                <li class="nav-item"> <a href="aboutus.html">关于我们</a>
+                <span class="line"></span></li>
+            </ul>
+            </div>
+     </div>
+    <div class="banner1">
+        <div class="banner-c">
+            <a href="#" class="left"> &lt; </a>
+            <a href="#" class="right"> &gt;</a>
+        </div>
+        <ul class="dots">
+            <li class="dot-item"></li>
+            <li class="dot-item"></li>
+        </ul>
+     </div>  
+    <div class="banner2">
+        <p class="p1">婚纱礼服</p>
+        <p class="p2">Wedding Dress</p>
+        <ul class="title">
+            <li class="nav active">
+                <a href="#">新品/NEW</a>
+                <span class="dots"></span>
+            </li>
+            <li class="nav">
+                <a href="#">2018春夏</a>
+                <span class="dots"></span>
+            </li>
+            <li class="nav">
+                <a href="#">2018秋冬</a>
+                <span class="dots"></span>
+            </li>
+            <li class="nav">
+                <a href="#">专属定制</a>
+                <span class="dots"></span>
+            </li>
+        </ul>
+        <ul class="main">
+            <li class="pic">
+                <a href="#" class="a1"></a>
+            </li>
+            <li class="pic">
+                <a href="#" class="b2"></a>
+            </li>
+            <li class="pic">
+                <a href="#" class="c3"></a>
+            </li>
+            <li class="pic mg0">
+                <a href="#" class="d4"></a>
+            </li>
+        </ul>
+        <p class="more">
+            <a href="#">MORE</a>
+        </p>
+     </div>
+    <div class="banner3">
+        <p class="p1">珠宝配饰</p>
+        <p class="p2">Jewelry Show</p>
+        <ul class="b3-main">
+            <li class="b3-pic">
+                <a href="#" class="a11"></a>
+            </li>
+            <li class="b3-pic">
+                <a href="#" class="b22"></a>
+            </li>
+            <li class="b3-pic">
+                <a href="#" class="c33"></a>
+            </li>
+            <li class="b3-pic mg0">
+                <a href="#" class="d44"></a>
+            </li>
+        </ul>
+        <p class="more">
+            <a href="#">MORE</a>
+        </p>
+     </div>
+    <div class="news">
+        <p class="p1">最新活动</p>
+        <p class="p2">Latest Activities</p>
+        <ul class="news-c">
+            <li class="new">
+                <div class="box">
+                    <span class="time">06-18</span> &nbsp;&nbsp; <span class="year">2018</span>
+                    <p class="title">新品发布会</p>
+                    <p class="content">伴随着T台两侧色彩趋势报告的发布,VERONICA2017婚纱新品发布会正...</p>
+                    <p class="a">
+                     <a href="#">more ></a> 
+                    </p>
+                </div>
+            </li>
+            <li class="new photo"></li>
+            <li class="new">
+                <div class="box">
+                    <span class="time">06-18</span> &nbsp;&nbsp; <span class="year">2018</span>
+                    <p class="title">新品发布会</p>
+                    <p class="content">伴随着T台两侧色彩趋势报告的发布,VERONICA2017婚纱新品发布会正...</p>
+                    <p class="a">
+                            <a href="#">more ></a> 
+                           </p>
+                </div>
+            </li>
+            <li class="new">
+                <div class="box">
+                    <span class="time">06-18</span> &nbsp;&nbsp; <span class="year">2018</span>
+                    <p class="title">新品发布会</p>
+                    <p class="content">伴随着T台两侧色彩趋势报告的发布,VERONICA2017婚纱新品发布会正...</p>
+                    <p class="a">
+                        <a href="#">more ></a> 
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <p class="more">
+                <a href="#">MORE</a>
+            </p>
+    </div>  
+    <ul class="designers">
+            <div class="left"></div>
+            <div class="right"></div>
+         <ul class="designer-c">
+                <div class="title">
+                        <p class="title1">设计师</p>
+                        <p class="title2">Designers</p>
+                    </div>
+               <li class="designer">
+                   <p class="d1"></p>
+                   <p class="d1name">Jason . W</p>
+                   <p class="d1position">首席设计师</p>
+                   <p class="d1content">法国时装设计师，VERONICA品牌创始人之一，设计总监，2016福布斯最具影响力的设计师...</p>
+                   <p class="more"><a href="#">MORE</a></p>
+                    <p class="line"></p>
+               </li>
+               <li class="designer">
+                    <p class="d1 b"></p>
+                    <p class="d1name">颜澈</p>
+                    <p class="d1position">资深设计师</p>
+                    <p class="d1content">设计界的“设计鬼才”从题材到表现方式都引起了极大的福布斯中国最具潜力，每一个产品都是我们精...</p>
+                    <p class="more"><a href="#">MORE</a></p>
+                    <p class="line"></p>
+               </li>
+               <li class="designer mg0">
+                   <p class="d1 c"></p>
+                   <p class="d1name">Katherine .J </p>
+                   <p class="d1position">运营总监</p>
+                   <p class="d1content">The world's leading electronic design journal 
+                        NEWWEBPICK recommended the designer...</p>
+                   <p class="more"><a href="#">MORE</a></p>
+                   <p class="line"></p>
+               </li>
+          </ul>
+    </ul>
+    <div class="foot">
+        <div class="foot-c">
+            <div class="foot-l">
+                <p>网站备案号：豫ICP备110121210号</p>
+                <p>增值电信业务经营许可证号：豫B2-20100033</p>
+            </div>
+            <div class="foot-r">
+                <span class="c1"></span>
+                <span class="c2">2018 VERONICA</span>
+                <a href="#">联系我们</a>
+                <a href="#">加入我们</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

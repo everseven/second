@@ -1,0 +1,153 @@
+.part1 {
+    margin-top: 100px;
+    width: 100%;height: 1260px;
+    background-color: #fff;
+}
+.part1-c {
+    width: 1200px;height: 100%;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+.part1-c .left {
+    float: left;
+    margin-right: 70px;
+    width: 709px;
+    height: 100%;
+}
+.part1-c .left .a {
+    width: 709px;
+    height: 473px;
+    margin-bottom: 50px;
+    background: url(../img/jew1.png) no-repeat center;
+}
+.part1-c .left .b {
+    width: 709px;
+    height: 473px;
+    margin-bottom: 50px;
+    background: url(../img/jew2.png) no-repeat center;
+}
+.part1-c .right {
+    float: left;
+    width: 400px;
+    height: 100%;
+}
+.part1-c .right .top {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 219px;
+    height: 55px;
+    border-left: 2px solid #000;
+}
+.part1-c .right .pa {
+    font-size: 30px; 
+}
+.part1-c .right .pa.b {
+    padding-top: 8px;
+    padding-right: 40px;
+    float: right;
+    font-size: 16px;
+    color: #333;
+} 
+.part1-c .right .pc {
+    margin-left: 150px;
+    font-size: 16px;
+    color: #cacaca;
+    padding-top: 28px;
+}
+.part1-c .right .pe {
+    margin-left: 25px;
+    font-size: 14px;
+    color: #cacaca;
+    padding-top: 38px;
+}
+.part1-c .right .pf a{
+    display: block;
+    margin-top: 75px;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.part1-c .left .c {
+    float: left;
+    color: #333;
+    font-size: 14px;
+ line-height: 18px;
+}
+.part1-c .left .c2 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.part1-c .left .c3 {
+    font-size: 16px;
+    line-height: 20px;
+
+}
+.part2 {
+    width: 100%;height: 555px;
+    background-color: #dddddd;
+}
+.part2-c {
+    overflow: hidden;
+    width: 1200px;height: 100%;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+.part2-c .box a {
+    float: left;
+    color: #9a9a9a;
+    font-size: 12px;
+}
+.part2-c .first {
+    margin-right: 40px;
+    width: 75px;height: 30px;line-height: 30px;text-align: center;
+    background-color: #f7f5f5;
+}
+.part2-c .sec {
+    margin-right: 40px;
+    width: 40px;height: 30px;line-height: 30px;text-align: center;
+    background-color: #f7f5f5;
+}
+.part2-c .third {
+    width: 40px;height: 30px;line-height: 30px;text-align: center;
+    background-color: #f7f5f5;
+}
+.part2-c .products {
+    width: 1200px;
+    height: 150px;
+    margin-bottom: 60px;
+}
+.part2-c .product {
+    float: left;
+    width: 212px;
+    height: 100%;
+    margin-right: 30px;
+}
+.part2-c .product.mg0 {
+    margin-right: 0;
+    background: url(../img/jewli1.png) no-repeat center;
+}
+.part2-c .product.aa {
+    background: url(../img/jewli2.png) no-repeat center;
+}
+.part2-c .product.bb {
+    background: url(../img/jewli3.png) no-repeat center;
+}.part2-c .product.cc {
+    background: url(../img/jewli4.png) no-repeat center;
+}.part2-c .product.dd {
+    background: url(../img/jewli5.png) no-repeat center;
+}
+
+.part2-c .more {
+    color: #c9c8c8;
+   display: block;
+    border: 1px solid #c9c8c8;
+    margin: 60px auto;
+    width: 150px;height: 40px;text-align: center;line-height: 40px; font-size: 12px;
+}
+.part2-c .box {
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+}

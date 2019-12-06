@@ -1,0 +1,44 @@
+.foot {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background-color: #444444;
+}
+.foot-c {
+    position: relative;
+    color: #fff;
+    width: 1200px;height: 100%;margin:  auto;
+    font-size: 12px;
+}
+.foot-c .foot-l {
+    
+    top: 36px;
+    position: absolute;
+    left: 0;
+}
+.foot-c .foot-l p {
+    margin-top:4px ;
+}
+.foot-c .foot-r {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    color: #fff;
+}
+.foot-c .foot-r .c1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+   left: -14px;
+   color: #fff;
+    background: url(../img/c.png) no-repeat center #fff;
+}
+.foot-c .foot-r a{
+    /* display: block; */
+    color: #fff;
+    margin-left: 58px;
+}
+.foot-c .foot-r a:hover{
+    color: red;
+}
